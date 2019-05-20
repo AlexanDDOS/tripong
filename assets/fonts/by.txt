@@ -1,0 +1,3 @@
+USED FONTS:
+LEDFONT by mold (https://fontlibrary.org/ru/font/ledfont-sharp)
+MONOID by larsenwork (https://github.com/larsenwork/monoid#readme)
