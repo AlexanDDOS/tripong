@@ -32,7 +32,7 @@ function love.load(args)
   
   --Do the definition script
   do
-    local defFile, err = loadfile("def.lua")
+    local defFile, err = loadstring(love.filesystem.read("def.lua"))
     assert(love.load ~= nil)
     if defFile then
       setfenv(defFile, states.commonModules)

@@ -31,7 +31,7 @@ function states.add(mod, tag)
     tag = mod
   end
   
-  mod, err = loadfile(mod)
+  mod, err = loadstring(love.filesystem.read(mod))
   if err then
     error(err)
   else
