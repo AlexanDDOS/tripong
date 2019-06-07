@@ -220,12 +220,12 @@ function state.update(dt)
     timer = timer + dt * timerCount
     if timer >= maxTime * 60 then
       gameOver = true
-      local maxScore = 0
+      local ms = 0
       for i = 1, playerN do
-        if out.score[i] > maxScore then
+        if out.score[i] > ms then
           winners = {i}
-          maxScore = i
-        elseif out.score[i] == maxScore then
+          ms = out.score[i]
+        elseif out.score[i] == ms then
           winners[#winners + 1] = i
         end
       end

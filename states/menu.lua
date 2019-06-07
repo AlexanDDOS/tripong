@@ -63,7 +63,7 @@ function state.draw()
   drawMachine(400, 140, 1.5)
   
   modules.fonts.print("ui", 0.4, 
-    "Code & sprites by AlexanDDOS\nSound by SubspaceAudio\nv. 1.0.0", 
+    "Code & sprites by AlexanDDOS\nSound by SubspaceAudio\nv. 1.0.2", 
     496, 550, 300, "right")
   
   mainMenu:draw(8, 462, "left")
